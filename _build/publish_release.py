@@ -63,6 +63,8 @@ def main() -> int:
     p.add_argument("--title", default="")
     p.add_argument("--notes", default="")
     p.add_argument("--draft", action="store_true")
+    # 资产名必须 ASCII：GitHub 对中文文件名会回落成 default.exe
+    p.add_argument("--asset-name", default="LabLedgerMerge.exe")
     args = p.parse_args()
 
     exe = os.path.join(DIST, EXE_NAME)
@@ -72,30 +74,42 @@ def main() -> int:
 
     token = gh_token()
     title = args.title or f"{args.tag} —— 化验数据并入样品台账"
-    notes = args.notes or f"首个版本。\n\n- exe `{EXE_NAME}`（{os.path.getsize(exe) / 1048576:.1f} MB）\n- MD5 `{md5(exe)}`\n"
+    notes = args.notes or (
+        f"首个版本。\n\n"
+        f"- 资产 `{args.asset_name}`（{os.path.getsize(exe) / 1048576:.1f} MB），"
+        f"下载后改名为 `化验数据并入台账.exe` 即可双击运行\n"
+        f"- MD5 `{md5(exe)}`\n"
+    )
 
-    print(f"创建 release {args.tag} …")
-    status, body = api("POST", f"https://api.github.com/repos/{REPO}/releases", token, {
-        "tag_name": args.tag,
-        "name": title,
-        "body": notes,
-        "draft": args.draft,
-        "prerelease": False,
-    })
-    if status not in (200, 201):
-        print(f"✗ 创建失败 HTTP {status}: {body}")
-        return 3
+    # 已有同 tag 的 release 就复用，不重复创建（重复 POST 会 422）
+    status, body = api("GET", f"https://api.github.com/repos/{REPO}/releases/tags/{args.tag}",
+                       token)
+    if status == 200:
+        release_id = body["id"]
+        upload_url = body["upload_url"].split("{")[0]
+        print(f"复用已有 release {args.tag}（id={release_id}）")
+    else:
+        print(f"创建 release {args.tag} …")
+        status, body = api("POST", f"https://api.github.com/repos/{REPO}/releases", token, {
+            "tag_name": args.tag,
+            "name": title,
+            "body": notes,
+            "draft": args.draft,
+            "prerelease": False,
+        })
+        if status not in (200, 201):
+            print(f"✗ 创建失败 HTTP {status}: {body}")
+            return 3
+        release_id = body["id"]
+        upload_url = body["upload_url"].split("{")[0]
+        print(f"  release id={release_id}")
 
-    release_id = body["id"]
-    upload_url = body["upload_url"].split("{")[0]
-    print(f"  release id={release_id}")
-
-    print(f"上传 {EXE_NAME} …")
+    print(f"上传 {args.asset_name} …")
     with open(exe, "rb") as fh:
         data = fh.read()
     status, body = api(
         "POST",
-        f"{upload_url}?name={urllib.parse.quote(EXE_NAME)}",
+        f"{upload_url}?name={urllib.parse.quote(args.asset_name)}",
         token, raw=data, content_type="application/octet-stream",
     )
     if status not in (200, 201):
@@ -103,9 +117,8 @@ def main() -> int:
         return 4
 
     size = body.get("size", 0) / 1048576
-    print(f"  ✓ 已上传 {size:.1f} MB")
-    print(f"\n{body.get('browser_download_url', '')}")
-    print(f"Release: https://github.com/{REPO}/releases/tag/{args.tag}")
+    print(f"  ✓ 已上传 {size:.1f} MB，资产 id={body.get('id')}")
+    print(f"\nRelease: https://github.com/{REPO}/releases/tag/{args.tag}")
     print(f"MD5: {md5(exe)}")
     return 0
 

@@ -6,6 +6,9 @@
 - 判不准归属的记录不会乱塞业务表，会单独进 `未知位置待定` 暂存表等你处理
 - 每次写入前自动备份，写错了能退回去
 
+**下载**：<https://github.com/bit479/lab-ledger-merge/releases/latest>
+（仓库是 private，需登录；资产名 `LabLedgerMerge.exe`，下载后改名为 `化验数据并入台账.exe` 再双击）
+
 ---
 
 ## 一、怎么用
