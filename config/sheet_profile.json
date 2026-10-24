@@ -1,0 +1,623 @@
+{
+  "ledger": "D:\\WK\\N CRT\\训练材料\\上库采矿厂2026-样品台账.xlsx",
+  "total_ana": 34646,
+  "locations_learned": 809,
+  "writable_sheets": 24,
+  "sheets": [
+    {
+      "sheet": "北部山头炮孔",
+      "max_row": 11957,
+      "used_cols": 4,
+      "is_staging": false,
+      "has_anchor": true,
+      "writable": true,
+      "excluded": false,
+      "groups": [
+        {
+          "anchor_col": "A",
+          "ana_col": "A",
+          "sample_col": "B",
+          "grade_col": "C",
+          "loc_col": "D",
+          "last_data_row": 11957,
+          "rows": 11859,
+          "next_write_row": 11958
+        }
+      ]
+    },
+    {
+      "sheet": "南部山头炮孔",
+      "max_row": 5211,
+      "used_cols": 4,
+      "is_staging": false,
+      "has_anchor": true,
+      "writable": true,
+      "excluded": false,
+      "groups": [
+        {
+          "anchor_col": "A",
+          "ana_col": "A",
+          "sample_col": "B",
+          "grade_col": "C",
+          "loc_col": "D",
+          "last_data_row": 5211,
+          "rows": 5197,
+          "next_write_row": 5212
+        }
+      ]
+    },
+    {
+      "sheet": "中心矿段炮孔",
+      "max_row": 4460,
+      "used_cols": 4,
+      "is_staging": false,
+      "has_anchor": true,
+      "writable": true,
+      "excluded": false,
+      "groups": [
+        {
+          "anchor_col": "A",
+          "ana_col": "A",
+          "sample_col": "B",
+          "grade_col": "C",
+          "loc_col": "D",
+          "last_data_row": 4460,
+          "rows": 4442,
+          "next_write_row": 4461
+        }
+      ]
+    },
+    {
+      "sheet": "1-1剥离",
+      "max_row": 168,
+      "used_cols": 4,
+      "is_staging": false,
+      "has_anchor": true,
+      "writable": true,
+      "excluded": false,
+      "groups": [
+        {
+          "anchor_col": "B",
+          "ana_col": "B",
+          "sample_col": "A",
+          "grade_col": "C",
+          "loc_col": "D",
+          "last_data_row": 168,
+          "rows": 167,
+          "next_write_row": 169
+        }
+      ]
+    },
+    {
+      "sheet": "前山Ⅱ号矿体-炮孔",
+      "max_row": 389,
+      "used_cols": 4,
+      "is_staging": false,
+      "has_anchor": true,
+      "writable": true,
+      "excluded": false,
+      "groups": [
+        {
+          "anchor_col": "B",
+          "ana_col": "B",
+          "sample_col": "A",
+          "grade_col": "C",
+          "loc_col": "D",
+          "last_data_row": 389,
+          "rows": 388,
+          "next_write_row": 390
+        }
+      ]
+    },
+    {
+      "sheet": "筛分矿样",
+      "max_row": 99,
+      "used_cols": 7,
+      "is_staging": false,
+      "has_anchor": false,
+      "writable": false,
+      "excluded": true,
+      "groups": []
+    },
+    {
+      "sheet": "剥离样",
+      "max_row": 482,
+      "used_cols": 12,
+      "is_staging": false,
+      "has_anchor": true,
+      "writable": true,
+      "excluded": false,
+      "groups": [
+        {
+          "anchor_col": "A",
+          "ana_col": "A",
+          "sample_col": "B",
+          "grade_col": "C",
+          "loc_col": "D",
+          "last_data_row": 482,
+          "rows": 421,
+          "next_write_row": 483
+        },
+        {
+          "anchor_col": "E",
+          "ana_col": "E",
+          "sample_col": "F",
+          "grade_col": "G",
+          "loc_col": "H",
+          "last_data_row": 424,
+          "rows": 365,
+          "next_write_row": 425
+        },
+        {
+          "anchor_col": "I",
+          "ana_col": "I",
+          "sample_col": "J",
+          "grade_col": "K",
+          "loc_col": "L",
+          "last_data_row": 201,
+          "rows": 161,
+          "next_write_row": 202
+        }
+      ]
+    },
+    {
+      "sheet": "原矿堆场山顶运矿样",
+      "max_row": 3817,
+      "used_cols": 9,
+      "is_staging": false,
+      "has_anchor": true,
+      "writable": true,
+      "excluded": false,
+      "groups": [
+        {
+          "anchor_col": "A",
+          "ana_col": "A",
+          "sample_col": "B",
+          "grade_col": "C",
+          "loc_col": "D",
+          "last_data_row": 3817,
+          "rows": 3593,
+          "next_write_row": 3818
+        },
+        {
+          "anchor_col": "F",
+          "ana_col": "F",
+          "sample_col": "G",
+          "grade_col": "H",
+          "loc_col": "I",
+          "last_data_row": 399,
+          "rows": 48,
+          "next_write_row": 400
+        }
+      ]
+    },
+    {
+      "sheet": "排土场",
+      "max_row": 172,
+      "used_cols": 5,
+      "is_staging": false,
+      "has_anchor": true,
+      "writable": true,
+      "excluded": false,
+      "groups": [
+        {
+          "anchor_col": "A",
+          "ana_col": "A",
+          "sample_col": "B",
+          "grade_col": "C",
+          "loc_col": "D",
+          "last_data_row": 172,
+          "rows": 142,
+          "next_write_row": 173
+        }
+      ]
+    },
+    {
+      "sheet": "中铁十九局低品位堆场样",
+      "max_row": 1767,
+      "used_cols": 14,
+      "is_staging": false,
+      "has_anchor": true,
+      "writable": true,
+      "excluded": false,
+      "groups": [
+        {
+          "anchor_col": "A",
+          "ana_col": "A",
+          "sample_col": "B",
+          "grade_col": "C",
+          "loc_col": "D",
+          "last_data_row": 1264,
+          "rows": 1184,
+          "next_write_row": 1265
+        },
+        {
+          "anchor_col": "F",
+          "ana_col": "F",
+          "sample_col": "G",
+          "grade_col": "H",
+          "loc_col": "I",
+          "last_data_row": 398,
+          "rows": 350,
+          "next_write_row": 399
+        }
+      ]
+    },
+    {
+      "sheet": "十道弯倒运矿石",
+      "max_row": 693,
+      "used_cols": 3,
+      "is_staging": false,
+      "has_anchor": true,
+      "writable": true,
+      "excluded": false,
+      "groups": [
+        {
+          "anchor_col": "A",
+          "ana_col": "A",
+          "sample_col": "B",
+          "grade_col": "C",
+          "loc_col": "—",
+          "last_data_row": 693,
+          "rows": 665,
+          "next_write_row": 694
+        }
+      ]
+    },
+    {
+      "sheet": "五道弯、十道弯运矿样",
+      "max_row": 2249,
+      "used_cols": 4,
+      "is_staging": false,
+      "has_anchor": true,
+      "writable": true,
+      "excluded": false,
+      "groups": [
+        {
+          "anchor_col": "A",
+          "ana_col": "A",
+          "sample_col": "B",
+          "grade_col": "C",
+          "loc_col": "D",
+          "last_data_row": 2230,
+          "rows": 2136,
+          "next_write_row": 2231
+        }
+      ]
+    },
+    {
+      "sheet": "1 2号溜槽样",
+      "max_row": 489,
+      "used_cols": 4,
+      "is_staging": false,
+      "has_anchor": true,
+      "writable": true,
+      "excluded": false,
+      "groups": [
+        {
+          "anchor_col": "A",
+          "ana_col": "A",
+          "sample_col": "B",
+          "grade_col": "C",
+          "loc_col": "D",
+          "last_data_row": 489,
+          "rows": 446,
+          "next_write_row": 490
+        }
+      ]
+    },
+    {
+      "sheet": "中丝路低品位堆场样",
+      "max_row": 168,
+      "used_cols": 4,
+      "is_staging": false,
+      "has_anchor": true,
+      "writable": true,
+      "excluded": false,
+      "groups": [
+        {
+          "anchor_col": "A",
+          "ana_col": "A",
+          "sample_col": "B",
+          "grade_col": "C",
+          "loc_col": "D",
+          "last_data_row": 168,
+          "rows": 161,
+          "next_write_row": 169
+        }
+      ]
+    },
+    {
+      "sheet": "中心矿段筛分氧化矿临时堆场",
+      "max_row": 15,
+      "used_cols": 7,
+      "is_staging": false,
+      "has_anchor": true,
+      "writable": true,
+      "excluded": false,
+      "groups": [
+        {
+          "anchor_col": "A",
+          "ana_col": "A",
+          "sample_col": "B",
+          "grade_col": "C",
+          "loc_col": "D",
+          "last_data_row": 15,
+          "rows": 14,
+          "next_write_row": 16
+        }
+      ]
+    },
+    {
+      "sheet": "二堆场",
+      "max_row": 1432,
+      "used_cols": 4,
+      "is_staging": false,
+      "has_anchor": true,
+      "writable": true,
+      "excluded": false,
+      "groups": [
+        {
+          "anchor_col": "A",
+          "ana_col": "A",
+          "sample_col": "B",
+          "grade_col": "C",
+          "loc_col": "D",
+          "last_data_row": 1432,
+          "rows": 1424,
+          "next_write_row": 1433
+        }
+      ]
+    },
+    {
+      "sheet": "低品位堆场样",
+      "max_row": 31,
+      "used_cols": 4,
+      "is_staging": false,
+      "has_anchor": true,
+      "writable": true,
+      "excluded": false,
+      "groups": [
+        {
+          "anchor_col": "A",
+          "ana_col": "A",
+          "sample_col": "B",
+          "grade_col": "C",
+          "loc_col": "D",
+          "last_data_row": 31,
+          "rows": 30,
+          "next_write_row": 32
+        }
+      ]
+    },
+    {
+      "sheet": "编录样",
+      "max_row": 896,
+      "used_cols": 9,
+      "is_staging": false,
+      "has_anchor": true,
+      "writable": true,
+      "excluded": false,
+      "groups": [
+        {
+          "anchor_col": "A",
+          "ana_col": "A",
+          "sample_col": "B",
+          "grade_col": "C",
+          "loc_col": "D",
+          "last_data_row": 896,
+          "rows": 875,
+          "next_write_row": 897
+        }
+      ]
+    },
+    {
+      "sheet": "爆堆样",
+      "max_row": 9,
+      "used_cols": 8,
+      "is_staging": false,
+      "has_anchor": true,
+      "writable": true,
+      "excluded": false,
+      "groups": [
+        {
+          "anchor_col": "A",
+          "ana_col": "A",
+          "sample_col": "B",
+          "grade_col": "C",
+          "loc_col": "D",
+          "last_data_row": 9,
+          "rows": 8,
+          "next_write_row": 10
+        },
+        {
+          "anchor_col": "E",
+          "ana_col": "E",
+          "sample_col": "F",
+          "grade_col": "G",
+          "loc_col": "H",
+          "last_data_row": 6,
+          "rows": 5,
+          "next_write_row": 7
+        }
+      ]
+    },
+    {
+      "sheet": "地质钻",
+      "max_row": 736,
+      "used_cols": 4,
+      "is_staging": false,
+      "has_anchor": true,
+      "writable": true,
+      "excluded": false,
+      "groups": [
+        {
+          "anchor_col": "A",
+          "ana_col": "A",
+          "sample_col": "B",
+          "grade_col": "C",
+          "loc_col": "D",
+          "last_data_row": 232,
+          "rows": 227,
+          "next_write_row": 233
+        }
+      ]
+    },
+    {
+      "sheet": "构造点",
+      "max_row": 16,
+      "used_cols": 6,
+      "is_staging": false,
+      "has_anchor": false,
+      "writable": false,
+      "excluded": true,
+      "groups": []
+    },
+    {
+      "sheet": "路边矿",
+      "max_row": 489,
+      "used_cols": 4,
+      "is_staging": false,
+      "has_anchor": true,
+      "writable": true,
+      "excluded": false,
+      "groups": [
+        {
+          "anchor_col": "A",
+          "ana_col": "A",
+          "sample_col": "B",
+          "grade_col": "C",
+          "loc_col": "D",
+          "last_data_row": 489,
+          "rows": 479,
+          "next_write_row": 490
+        }
+      ]
+    },
+    {
+      "sheet": "倒矿样",
+      "max_row": 34,
+      "used_cols": 4,
+      "is_staging": false,
+      "has_anchor": true,
+      "writable": true,
+      "excluded": false,
+      "groups": [
+        {
+          "anchor_col": "A",
+          "ana_col": "A",
+          "sample_col": "B",
+          "grade_col": "C",
+          "loc_col": "D",
+          "last_data_row": 34,
+          "rows": 33,
+          "next_write_row": 35
+        }
+      ]
+    },
+    {
+      "sheet": "前山转石探矿剥离样",
+      "max_row": 12,
+      "used_cols": 4,
+      "is_staging": false,
+      "has_anchor": true,
+      "writable": true,
+      "excluded": false,
+      "groups": [
+        {
+          "anchor_col": "A",
+          "ana_col": "A",
+          "sample_col": "B",
+          "grade_col": "C",
+          "loc_col": "D",
+          "last_data_row": 12,
+          "rows": 11,
+          "next_write_row": 13
+        }
+      ]
+    },
+    {
+      "sheet": "多元素分析实验",
+      "max_row": 73,
+      "used_cols": 8,
+      "is_staging": false,
+      "has_anchor": true,
+      "writable": false,
+      "excluded": true,
+      "groups": [
+        {
+          "anchor_col": "A",
+          "ana_col": "A",
+          "sample_col": "D",
+          "grade_col": "C",
+          "loc_col": "B",
+          "last_data_row": 72,
+          "rows": 57,
+          "next_write_row": 73
+        }
+      ]
+    },
+    {
+      "sheet": "十九局出矿样",
+      "max_row": 75,
+      "used_cols": 8,
+      "is_staging": false,
+      "has_anchor": true,
+      "writable": true,
+      "excluded": false,
+      "groups": [
+        {
+          "anchor_col": "A",
+          "ana_col": "A",
+          "sample_col": "B",
+          "grade_col": "C",
+          "loc_col": "D",
+          "last_data_row": 75,
+          "rows": 61,
+          "next_write_row": 76
+        },
+        {
+          "anchor_col": "E",
+          "ana_col": "E",
+          "sample_col": "F",
+          "grade_col": "G",
+          "loc_col": "H",
+          "last_data_row": 31,
+          "rows": 26,
+          "next_write_row": 32
+        }
+      ]
+    },
+    {
+      "sheet": "选厂原矿数据",
+      "max_row": 62,
+      "used_cols": 4,
+      "is_staging": false,
+      "has_anchor": false,
+      "writable": false,
+      "excluded": true,
+      "groups": []
+    },
+    {
+      "sheet": "探矿样",
+      "max_row": 155,
+      "used_cols": 4,
+      "is_staging": false,
+      "has_anchor": true,
+      "writable": true,
+      "excluded": false,
+      "groups": [
+        {
+          "anchor_col": "A",
+          "ana_col": "A",
+          "sample_col": "B",
+          "grade_col": "C",
+          "loc_col": "D",
+          "last_data_row": 155,
+          "rows": 150,
+          "next_write_row": 156
+        }
+      ]
+    }
+  ]
+}

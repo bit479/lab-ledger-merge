@@ -1,0 +1,24 @@
+# 运行时产物（_out 里含台账副本和备份，是真实生产数据，绝不入库）
+_out/
+dist/
+build/
+*.spec
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# 日志与备份
+*.log
+*.bak
+*.bak.xlsx
+
+# 打包/编辑器
+.pytest_cache/
+.idea/
+.vscode/
+Thumbs.db
+.DS_Store
